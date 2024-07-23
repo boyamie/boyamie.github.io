@@ -1,0 +1,24 @@
+title: boyamie
+iconURL: assets/my-icon.png
+# theme: jekyll-theme-leaf
+
+# for a clean URL
+permalink: :slug
+
+social:
+  blog: boyamie
+  github: boyamie
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+#math latex
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+### comments & analytics
+google_analytics: UA-NNNNNNNN-N
