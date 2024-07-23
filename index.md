@@ -25,7 +25,7 @@ author_profile: true
     * [![Daily Report](https://img.shields.io/badge/Day06-red?style=flat)](https://boyamie.github.io/boostcamp-006)
     [![Daily Report](https://img.shields.io/badge/Day07-orange?style=flat)](https://boyamie.github.io/boostcamp-007)
     [![Daily Report](https://img.shields.io/badge/Day08-yellow?style=flat)](https://boyamie.github.io/boostcamp-008)
-    [![Daily Report](https://img.shields.io/badge/광복절-grey?style=flat)]
+    ![Daily Report](https://img.shields.io/badge/광복절-grey?style=flat)
     [![Daily Report](https://img.shields.io/badge/Day10-blue?style=flat)](https://boyamie.github.io/boostcamp-010)
 <br><br>
 
