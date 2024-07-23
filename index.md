@@ -8,9 +8,9 @@ author_profile: true
 # **Final Projects**
 <br>
 
-### AI Tech 7 OnBoarding Class**
+### **AI Tech 7 OnBoarding Class**
 <span style="color:grey">2024.07.29 ~ 2024.08.03</span>
-### AI Tech 7 Main Class**
+### **AI Tech 7 Main Class**
 <span style="color:grey">2024.08.05 ~ 2025.02.12</span>
 
 * [Week 1] *Pytorch*
