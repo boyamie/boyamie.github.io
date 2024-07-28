@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 50" style="enable-background:new 0 0 200 50;" xml:space="preserve">
-  <style type="text/css">
-    .st0{fill:#000000;}
-    .st1{font-family:'Arial';}
-    .st2{font-size:48px;}
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font-family: Arial, sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      fill: black;
+    }
   </style>
-  <text x="10" y="40" class="st0 st1 st2">Velog</text>
+  <text x="10" y="40" class="text">Velog</text>
 </svg>
-
