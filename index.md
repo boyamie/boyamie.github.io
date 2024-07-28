@@ -11,13 +11,13 @@ author_profile: true
 ### **AI Tech 7 OnBoarding Class**
 <span style="color:grey">2024.07.29 ~ 2024.08.03</span>
 
-* [Week 1] *Track B. Python*
+* [Week 0] *Track B. Python*
     * [![Daily Report](https://img.shields.io/badge/Day01-red?style=flat)](https://boyamie.github.io/boostcamp-0001)
     [![Daily Report](https://img.shields.io/badge/Day02-orange?style=flat)](https://boyamie.github.io/boostcamp-0002)
     [![Daily Report](https://img.shields.io/badge/Day03-yellow?style=flat)](https://boyamie.github.io/boostcamp-0003)
     [![Daily Report](https://img.shields.io/badge/Day04-green?style=flat)](https://boyamie.github.io/boostcamp-0004)
     [![Daily Report](https://img.shields.io/badge/Day05-blue?style=flat)](https://boyamie.github.io/boostcamp-0005)
-<br><br>
+<br><br><br>
 
 ### **AI Tech 7 Main Class**
 <span style="color:grey">2024.08.05 ~ 2025.02.12</span>
