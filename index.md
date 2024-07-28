@@ -12,7 +12,6 @@ author_profile: true
 <span style="color:grey">2024.07.29 ~ 2024.08.03</span>
 
 * [Week 0] *Track B. Python*
-<br>
     * [![Daily Report](https://img.shields.io/badge/Day01-red?style=flat)](https://boyamie.github.io/boostcamp-0001)
     [![Daily Report](https://img.shields.io/badge/Day02-orange?style=flat)](https://boyamie.github.io/boostcamp-0002)
     [![Daily Report](https://img.shields.io/badge/Day03-yellow?style=flat)](https://boyamie.github.io/boostcamp-0003)
