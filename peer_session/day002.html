@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLI 및 버전 관리</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CLI, 버전관리</h1>
+
+    <h2>1. 버전 관리란?</h2>
+    <ul>
+        <li>동일한 파일명에 진행과정을 기록하는 것</li>
+        <li>버전 관리는 파일이나 소스 코드의 변화를 시간에 따라 기록하고 관리하는 시스템입니다. 이를 통해 과거 버전으로의 복구, 변경 사항 추적, 협업 등이 가능합니다.</li>
+    </ul>
+
+    <h2>2. CLI(Command Line Interface)의 필요성</h2>
+    <ul>
+        <li>CLI는 명령어 기반으로 컴퓨터와 상호작용하는 인터페이스입니다. 이를 배우면 자동화, 효율적인 작업 수행, 그리고 GUI로는 할 수 없는 고급 기능을 사용할 수 있게 됩니다.</li>
+    </ul>
+
+    <h1>git != GitHub</h1>
+
+    <h2>1. git 과 github는 어떻게 다를까</h2>
+    <ul>
+        <li>Git: 분산 버전 관리 시스템으로, 코드의 변경 이력을 관리하고 여러 사람이 동시에 작업할 수 있게 합니다.</li>
+        <li>GitHub: Git 저장소를 호스팅하는 웹 서비스로, Git의 기능을 기반으로 협업, 코드 리뷰, 이슈 추적 등을 지원합니다.</li>
+    </ul>
+
+    <h1>init, clone</h1>
+
+    <h2>1. Repository를 local에 생성하는 방법은 init, clone 두 가지가 있습니다. 이 두 가지가 무엇이 다를까</h2>
+    <ul>
+        <li><code>init</code>: 새로 로컬 저장소를 생성합니다. 즉, 기존의 버전 관리가 없는 디렉토리를 버전 관리하기 시작합니다.</li>
+        <li><code>clone</code>: 원격 저장소를 복제하여 로컬에 저장소를 생성합니다. 원격 저장소의 내용을 가져와서 로컬에 동일한 버전 관리 환경을 설정합니다.</li>
+    </ul>
+
+    <h2>2. git clone하는 절차와 명령어</h2>
+    <p>원격 저장소 URL을 사용하여 로컬로 복제합니다.</p>
+    <pre><code>git clone <repository-url></code></pre>
+
+    <h2>3. .git 폴더에는 어떤 내용이 들어갈까? 삭제하면 어떻게 될까?</h2>
+    <ul>
+        <li><code>.git</code> 폴더에는 Git 저장소의 모든 버전 정보, 설정, 리포지토리 데이터 등이 포함되어 있습니다.</li>
+        <li>이 폴더를 삭제하면 해당 디렉토리는 Git 저장소가 아니게 되며, 버전 관리 정보가 모두 사라집니다.</li>
+    </ul>
+</body>
+
+</html>
