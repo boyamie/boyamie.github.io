@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dataset and Neural Network Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h2>1. 데이터셋 불러오기 및 사용자 정의 데이터셋 클래스</h2>
+
+<p><strong>설명:</strong></p>
+<p>Iris 데이터 셋을 로드하고 PyTorch의 Dataset 클래스를 상속받아 사용자 정의 클래스를 만듭니다.</p>
+<ol>
+    <li><code>__init__</code> 메소드에서 데이터를 로드하고 학습 또는 테스트 용도로 분할합니다.</li>
+    <li><code>__len__</code> 메소드에서 데이터셋의 전체 길이를 반환합니다.</li>
+    <li><code>__getitem__</code> 메소드에서 주어진 인덱스의 샘플과 레이블을 반환합니다.</li>
+</ol>
+
+<h2>코드 구현</h2>
+
+<pre><code>from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from torch.utils.data import DataLoader, Dataset
+import torch
+
+class CustomIrisDataset(Dataset):
+    def __init__(self, train=True, seed=42):
+        # Iris 데이터셋을 로드하고 학습/테스트 데이터로 분할합니다.
+        iris_data = load_iris()
+        X_train, X_test, y_train, y_test = train_test_split(
+            iris_data.data,
+            iris_data.target,
+            test_size=0.2,
+            random_state=seed,
+            stratify=iris_data.target
+        )
+        # 학습 데이터 또는 테스트 데이터를 선택합니다.
+        if train:
+            self.data = torch.tensor(X_train, dtype=torch.float32)
+            self.labels = torch.tensor(y_train, dtype=torch.long)
+        else:
+            self.data = torch.tensor(X_test, dtype=torch.float32)
+            self.labels = torch.tensor(y_test, dtype=torch.long)
+
+    def __len__(self):
+        # 데이터셋의 길이를 반환합니다.
+        return len(self.data)
+
+    def __getitem__(self, index):
+        # 인덱스에 해당하는 데이터와 레이블을 반환합니다.
+        return self.data[index], self.labels[index]
+
+# 배치 크기 정의
+batch_size = 16
+# 학습 데이터 로더 생성
+train_dataset = CustomIrisDataset(train=True)
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+# 테스트 데이터 로더 생성
+test_dataset = CustomIrisDataset(train=False)
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)</code></pre>
+
+<h2>선형 레이어 정의</h2>
+
+<pre><code>class SimpleLinearLayer:
+    def __init__(self, input_dim, output_dim):
+        # 가중치와 편향을 초기화합니다.
+        self.weights = torch.randn(output_dim, input_dim)
+        self.biases = torch.randn(output_dim)
+
+    def __call__(self, inputs):
+        # 선형 변환을 수행하여 출력을 계산합니다.
+        return torch.matmul(inputs, self.weights.T) + self.biases
+
+    def to_device(self, device):
+        # 레이어의 가중치와 편향을 지정된 장치로 이동합니다.
+        self.weights = self.weights.to(device)
+        self.biases = self.biases.to(device)
+
+    def get_parameters(self):
+        # 레이어의 파라미터(가중치와 편향)를 반환합니다.
+        return [self.weights, self.biases]
+
+# 선형 레이어를 생성하고 파라미터를 확인합니다.
+linear_layer = SimpleLinearLayer(1, 3)
+input_tensor = torch.tensor([[1.0]])
+print("초기 가중치와 편향:")
+print(linear_layer.get_parameters())
+
+# 가중치와 편향을 수동으로 설정합니다.
+linear_layer.weights = torch.tensor([[1.0], [2.0], [3.0]])
+linear_layer.biases = torch.tensor([1.0, 1.0, 1.0])
+print("수정된 가중치와 편향:")
+print(linear_layer.get_parameters())
+
+# 선형 레이어를 통해 입력을 전달하고 출력을 확인합니다.
+output = linear_layer(input_tensor)
+print("출력 결과:")
+print(output)
+
+assert output.shape == (1, 3)
+assert torch.allclose(output, torch.tensor([[2.0, 3.0, 4.0]]))
+
+<h2>ReLU 활성화 함수 정의</h2>
+
+<pre><code>class CustomReLU:
+    def __init__(self):
+        pass
+
+    def __call__(self, inputs):
+        # 입력 값 중 0보다 작은 값을 0으로 변환하여 반환합니다.
+        return torch.clamp(inputs, min=0)
+
+# ReLU 활성화 함수의 동작을 확인합니다.
+relu = CustomReLU()
+sample_input = torch.linspace(-0.5, 0.5, 11)
+print("ReLU 적용 전:")
+print(sample_input)
+output_relu = relu(sample_input)
+print("ReLU 적용 후:")
+print(output_relu)
+
+import matplotlib.pyplot as plt
+# ReLU 결과를 시각화합니다.
+plt.plot(sample_input, sample_input, label="Input")
+plt.plot(sample_input, output_relu, label="ReLU Output")
+plt.legend()
+plt.show()
+
+assert torch.allclose(output_relu, torch.tensor([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5]))
+
+</body>
+</html>
