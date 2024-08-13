@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Study 1주차 - 2 교육자료</title>
+</head>
+<body>
+    <h1>GitHub Study 1주차 - 2 교육자료</h1>
+
+    <h2>GIT 활용하기</h2>
+    <h3>버전 관리</h3>
+    
+    <h4>0. git의 다운로드 여부 체크</h4>
+    <p>Windows 기준으로 git의 다운로드 여부를 체크합니다.</p>
+    <ul>
+        <li>메뉴 검색 -> ‘cmd’ -> ‘git’ 입력 후 엔터 키</li>
+        <li>명령 프롬프트(cmd) 화면에서 git 설치 여부 확인</li>
+    </ul>
+    
+    <h4>1. git 다운로드 받기</h4>
+    <p>git은 운영체제마다 다운로드 방법이 다릅니다. Windows 기준으로 다운로드를 설명합니다.</p>
+    <ul>
+        <li>mac에서 git 다운로드는 <a href="https://www.youtube.com/watch?v=mxUL0uMhc6c&list=PLuHgQVnccGMATJK16UJ9Fjay0ozrSZKiI&index=2">여기</a>를 참조하세요!</li>
+        <li>Windows에서 git 다운로드는 <a href="https://git-scm.com/">여기</a>를 클릭하세요.</li>
+        <li>설치가 완료되면 ‘Git Bash’를 실행하세요.</li>
+    </ul>
+
+    <h4>2. 버전 관리 도입</h4>
+    <ul>
+        <li>‘Git Bash’를 실행 후, 버전 관리를 할 폴더로 이동합니다. 예시: <code>c>github study>git</code></li>
+        <li><code>mkdir</code> 명령어를 사용하여 폴더를 생성하고 그 폴더로 이동합니다.</li>
+        <li><code>git init</code> 명령어로 해당 폴더를 git으로 초기화합니다.</li>
+        <li>초기화 후 <code>.git</code> 디렉토리가 생성됩니다.</li>
+    </ul>
+
+    <h4>3. 버전 만들어보기</h4>
+    <p>목적: 한 파일의 변경 사항들을 버전으로 만들어 관리하는 것</p>
+    <ul>
+        <li><code>nano</code> 명령어로 ‘hello1.txt’ 파일을 만듭니다.</li>
+        <li>파일의 상태를 확인하기 위해 <code>git status</code> 명령어를 사용합니다.</li>
+        <li><code>git add hello1.txt</code> 명령어로 파일을 staging area에 추가합니다.</li>
+        <li><code>git commit -m "메시지"</code> 명령어로 버전을 생성합니다.</li>
+        <li>생성된 버전은 <code>git log</code> 명령어로 확인할 수 있습니다.</li>
+    </ul>
+
+    <h4>4. 파일 여러 개를 버전으로 만들기</h4>
+    <p>목적: 여러 파일의 변경 사항들을 버전으로 만들어 관리하는 것</p>
+    <ul>
+        <li><code>nano hello2.txt</code> 명령어로 두 번째 파일을 만듭니다.</li>
+        <li>두 파일 모두를 <code>git add</code> 명령어로 staging area에 추가합니다.</li>
+        <li><code>git commit -m "Message3"</code> 명령어로 버전을 생성합니다.</li>
+        <li>버전마다 어떤 파일들이 연관되어 있는지는 검색을 통해 확인할 수 있습니다.</li>
+    </ul>
+
+    <h4>5. 버전 간의 차이점 살펴보기</h4>
+    <p>목적: 파일과 파일(버전과 버전) 사이의 차이점을 비교하고 문제를 분석하는 것</p>
+    <ul>
+        <li><code>git diff</code> 명령어로 버전 간의 차이점을 확인합니다.</li>
+        <li>문제 발생 시 <code>git reset</code> 명령어로 작업을 원래 상태로 되돌릴 수 있습니다.</li>
+        <li>버전 간의 비교를 통해 의사결정을 할 수 있습니다.</li>
+    </ul>
+</body>
+</html>
