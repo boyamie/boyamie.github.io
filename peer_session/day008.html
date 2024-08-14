@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoring 240814</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mentoring 240814</h1>
+
+    <h2>1. Deep Learning Process Recap</h2>
+    <p>
+        Deep learning process에서 input과 output 구조를 보면, MNIST 데이터셋의 28x28 이미지를 벡터화시키면 784가 input으로 들어가고, output으로는 10차원이 나옵니다. 데이터를 통해 자연스럽게 학습을 진행하며, 이는 0부터 9까지의 숫자를 분류하는 것일 수도 있지만, 이미지를 통해 사람을 제거하는 등의 작업에서도 모델의 구성에 대한 힌트를 얻을 수 있습니다.
+    </p>
+
+    <h2>2. 강의 내용 Review</h2>
+    <ul>
+        <li><strong>PyTorch 사용:</strong> Custom Model - 기존에 정의되어 있는 모델을 이용하거나 조금 변형합니다.</li>
+        <li><strong>Custom Dataset/Dataloader:</strong> 논문을 보고 이를 구현하는 것이 엔지니어의 역량을 나타냅니다. 대부분의 회사는 자체 데이터셋을 이용합니다.</li>
+        <li><strong>Autograd 및 Optimizer:</strong> 모델 학습 및 최적화에 사용됩니다.</li>
+        <li><strong>Hyperparameter Tuning:</strong> 모델의 성능을 최적화하기 위해 중요한 작업입니다.</li>
+        <li><strong>다중 GPU 활용:</strong> 앞으로 찾아보면 좋은 키워드로는 PyTorch-Lightning, DeepSpeed 등이 있습니다. 이들은 Multi-GPU를 어떻게 효율적으로 학습시킬지를 다룹니다.</li>
+    </ul>
+    <p>
+        회사에서는 보통 GPU가 4개 정도 주어지며, 업무 기간은 1주일입니다. A라는 사람이 1개의 GPU를 이용해서 10의 결과를 낸다면, B라는 사람은 4개의 GPU를 이용해서 100의 결과를 낼 수 있을 것입니다. 따라서 이론뿐만 아니라 주어진 자원을 얼마나 잘 활용할 수 있는지가 중요하며, GPU가 많고 실험을 많이 돌릴 수 있는 환경이 주어지면 더욱 좋습니다.
+    </p>
+</body>
+</html>
+</head>
+<body>
+    <h1>Multi-GPU 활용 및 PyTorch Lightning</h1>
+
+    <h2>1. 다중 GPU 활용의 필요성</h2>
+    <p>
+        딥러닝 모델이 점점 더 복잡해지고 대규모 데이터셋을 처리해야 할 때, 단일 GPU로는 처리 속도와 메모리 측면에서 한계가 발생할 수 있습니다. 이때 다중 GPU를 활용하면 다음과 같은 이점이 있습니다:
+    </p>
+    <ul>
+        <li><strong>병렬 처리:</strong> 여러 GPU가 병렬로 연산을 수행함으로써 학습 시간을 단축할 수 있습니다.</li>
+        <li><strong>메모리 확장:</strong> 각 GPU에 데이터를 분산하여 더 큰 모델을 처리할 수 있습니다.</li>
+        <li><strong>성능 향상:</strong> GPU를 추가로 활용하여 더 큰 배치 크기(batch size)로 학습을 진행할 수 있습니다.</li>
+    </ul>
+
+    <h2>2. PyTorch에서 Multi-GPU 활용</h2>
+
+    <h3>2.1 DataParallel</h3>
+    <p>
+        <code>DataParallel</code>은 가장 기본적인 Multi-GPU 사용 방법입니다. 모델을 여러 GPU에 분산시키고, 각 GPU에서 병렬로 학습을 진행한 뒤, 결과를 집계하여 업데이트합니다.
+    </p>
+    <pre><code>import torch
+import torch.nn as nn
+
+# 모델 정의
+model = MyModel()
+
+# 모델을 여러 GPU에 분산
+if torch.cuda.device_count() > 1:
+    model = nn.DataParallel(model)
+
+# 모델을 GPU로 이동
+model = model.to('cuda')
+
+# 이후 학습 루프에서 그대로 사용 가능</code></pre>
+    <p><strong>장점:</strong> 사용이 간편하며, 코드 수정이 거의 필요 없습니다.</p>
+    <p><strong>단점:</strong> GPU 간의 통신 오버헤드가 존재하며, 성능 최적화 측면에서 제한이 있을 수 있습니다.</p>
+
+    <h3>2.2 DistributedDataParallel</h3>
+    <p>
+        <code>DistributedDataParallel</code>(DDP)은 <code>DataParallel</code>보다 더 성능이 좋은 방법입니다. 각 GPU가 독립적으로 모델을 학습하고, 그 결과를 동기화하여 업데이트합니다.
+    </p>
+    <pre><code>import torch
+import torch.nn as nn
+import torch.distributed as dist
+
+# DDP 설정
+dist.init_process_group(backend='nccl')
+
+# 모델 정의
+model = MyModel().to('cuda')
+
+# 모델을 DDP로 감싸기
+model = nn.parallel.DistributedDataParallel(model)
+
+# 이후 학습 루프에서 그대로 사용 가능</code></pre>
+    <p><strong>장점:</strong> <code>DataParallel</code>에 비해 성능이 우수하며, GPU 간의 통신 오버헤드가 적습니다. 대규모 분산 학습에 적합합니다.</p>
+    <p><strong>단점:</strong> 설정이 조금 더 복잡하며, DDP에 맞춘 코드를 작성해야 할 수 있습니다.</p>
+
+    <h2>3. PyTorch Lightning</h2>
+    <p>
+        PyTorch Lightning은 PyTorch 기반의 고수준 라이브러리로, 코드의 복잡성을 줄이고, Multi-GPU 학습을 포함한 여러 가지 학습 전략을 쉽게 구현할 수 있도록 도와줍니다.
+    </p>
+
+    <h3>3.1 PyTorch Lightning을 이용한 Multi-GPU 학습</h3>
+    <p>
+        PyTorch Lightning에서 Multi-GPU 학습을 위해 필요한 코드는 매우 간단합니다. 모델을 <code>pl.LightningModule</code>로 정의하고, 학습 시에 <code>Trainer</code>에 <code>gpus</code> 인자를 설정하면 됩니다.
+    </p>
+    <pre><code>import pytorch_lightning as pl
+
+class MyLightningModel(pl.LightningModule):
+    def __init__(self):
+        super(MyLightningModel, self).__init__()
+        self.model = MyModel()
+
+    def forward(self, x):
+        return self.model(x)
+
+    def training_step(self, batch, batch_idx):
+        x, y = batch
+        y_hat = self.model(x)
+        loss = nn.functional.cross_entropy(y_hat, y)
+        return loss
+
+    def configure_optimizers(self):
+        optimizer = torch.optim.Adam(self.parameters(), lr=1e-3)
+        return optimizer
+
+# 모델 정의
+model = MyLightningModel()
+
+# Trainer 정의 및 Multi-GPU 학습
+trainer = pl.Trainer(gpus=4, accelerator='ddp')
+trainer.fit(model, train_dataloader)</code></pre>
+    <p><strong>장점:</strong> 코드의 가독성과 유지보수성을 높여주며, 복잡한 학습 루프를 간결하게 작성할 수 있습니다.</p>
+    <p><strong>단점:</strong> 기존 PyTorch 코드와 다소 다르기 때문에 처음에 익숙해지는 데 시간이 걸릴 수 있습니다.</p>
+
+    <h2>4. Multi-GPU 학습 효율화</h2>
+    <p>
+        다중 GPU 학습의 효율성을 극대화하기 위해 고려해야 할 몇 가지 사항이 있습니다:
+    </p>
+    <h3>4.1 배치 크기 최적화</h3>
+    <p>
+        배치 크기는 각 GPU가 효율적으로 계산을 수행할 수 있도록 조정해야 합니다. 일반적으로 GPU의 메모리 용량에 따라 적절한 배치 크기를 설정해야 하며, 배치 크기를 늘리면 학습 속도가 빨라질 수 있습니다.
+    </p>
+    <h3>4.2 통신 오버헤드 최소화</h3>
+    <p>
+        GPU 간의 통신 오버헤드를 줄이기 위해 <code>DistributedDataParallel</code>을 사용하는 것이 좋습니다. 이 방법은 GPU 간의 동기화를 효과적으로 처리하며, 학습 속도를 높이는 데 유리합니다.
+    </p>
+    <h3>4.3 GPU 활용도 모니터링</h3>
+    <p>
+        학습 중에는 GPU의 사용률과 메모리 사용량을 모니터링하여 각 GPU가 최대한 효율적으로 사용되고 있는지 확인해야 합니다. 이 정보는 <code>nvidia-smi</code> 명령어를 사용하여 실시간으로 확인할 수 있습니다.
+    </p>
+    <h3>4.4 최적화 및 튜닝</h3>
+    <p>
+        PyTorch Lightning에서는 다양한 최적화 기법(예: 혼합 정밀도 학습, Gradient Clipping 등)을 쉽게 적용할 수 있습니다. 이를 통해 학습 속도를 더욱 향상시킬 수 있습니다.
+    </p>
+</body>
+</html>
