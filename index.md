@@ -38,7 +38,7 @@ author_profile: true
     [![Daily Report](https://img.shields.io/badge/Day10-blue?style=flat)](https://boyamie.github.io/boostcamp-010)
 <br><br>
 
-* [Week 3] *ML LifeCycle & Exploratory Data Analysis(EDA) & Data Visualization*
+* [Week 3] *Exploratory Data Analysis(EDA) & Data Visualization*
     * [![Daily Report](https://img.shields.io/badge/Day11-red?style=flat)](https://boyamie.github.io/boostcamp-011)
     [![Daily Report](https://img.shields.io/badge/Day12-orange?style=flat)](https://boyamie.github.io/boostcamp-012)
     [![Daily Report](https://img.shields.io/badge/Day13-yellow?style=flat)](https://boyamie.github.io/boostcamp-013)
