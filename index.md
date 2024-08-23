@@ -38,7 +38,7 @@ author_profile: true
     [![Daily Report](https://img.shields.io/badge/Day10-blue?style=flat)](https://boyamie.github.io/boostcamp-010)
 <br><br>
 
-* [Week 3] *Exploratory Data Analysis(EDA) & Data Visualization*
+* [Week 3] *EDA & Data Vis.*
     * [![Daily Report](https://img.shields.io/badge/Day11-red?style=flat)](https://boyamie.github.io/boostcamp-011)
     [![Daily Report](https://img.shields.io/badge/Day12-orange?style=flat)](https://boyamie.github.io/boostcamp-012)
     [![Daily Report](https://img.shields.io/badge/Day13-yellow?style=flat)](https://boyamie.github.io/boostcamp-013)
@@ -46,7 +46,7 @@ author_profile: true
     [![Daily Report](https://img.shields.io/badge/Day15-blue?style=flat)](https://boyamie.github.io/boostcamp-015)
 <br><br>
 
-* [Week 4] *Exploratory Data Analysis(EDA) & Data Visualization & Computer Vision*
+* [Week 4] *EDA & Data Vis. & Computer Vision*
     * [![Daily Report](https://img.shields.io/badge/Day16-red?style=flat)](https://boyamie.github.io/boostcamp-016)
     [![Daily Report](https://img.shields.io/badge/Day17-orange?style=flat)](https://boyamie.github.io/boostcamp-017)
     [![Daily Report](https://img.shields.io/badge/Day18-yellow?style=flat)](https://boyamie.github.io/boostcamp-018)
