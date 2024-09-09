@@ -63,11 +63,11 @@ author_profile: true
 <br><br>
 
 * [Week 6] *Computer Vision Basic Project*
-    * [![Daily Report](https://img.shields.io/badge/Day30-red?style=flat)](https://boyamie.github.io/boostcamp-030)
-    [![Daily Report](https://img.shields.io/badge/Day31-orange?style=flat)](https://boyamie.github.io/boostcamp-031)
-    [![Daily Report](https://img.shields.io/badge/Day32-yellow?style=flat)](https://boyamie.github.io/boostcamp-032)
-    [![Daily Report](https://img.shields.io/badge/Day33-green?style=flat)](https://boyamie.github.io/boostcamp-033)
-    [![Daily Report](https://img.shields.io/badge/Day34-blue?style=flat)](https://boyamie.github.io/boostcamp-034)
+    * [![Daily Report](https://img.shields.io/badge/Day26-red?style=flat)](https://boyamie.github.io/boostcamp-026)
+    [![Daily Report](https://img.shields.io/badge/Day27-orange?style=flat)](https://boyamie.github.io/boostcamp-027)
+    [![Daily Report](https://img.shields.io/badge/Day28-yellow?style=flat)](https://boyamie.github.io/boostcamp-028)
+    [![Daily Report](https://img.shields.io/badge/Day29-green?style=flat)](https://boyamie.github.io/boostcamp-029)
+    [![Daily Report](https://img.shields.io/badge/Day30-blue?style=flat)](https://boyamie.github.io/boostcamp-030)
 <br><br>
 
 * [Week 7] *Computer Vision Basic Projec*
