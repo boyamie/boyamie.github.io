@@ -7,6 +7,11 @@ author_profile: true
 [![Github Badge](https://img.shields.io/badge/Github-161c22?style=flat&logo=github&link=https://github.com/boyamie/)](https://github.com/boyamie/)
 # **Projects**
 <br>
+### **Sketch image classification**
+<span style="color:grey">2024.09.11 11:00 ~ 2024.09.26 19:00</span>
+[![Report Badge](https://img.shields.io/badge/REPORT-161c22?style=flat&logo=gitbook&link=https://github.com/boyamie/)](./reports/tex)
+
+<br>
 
 ### **AI Tech 7 OnBoarding Class**
 <span style="color:grey">2024.07.29 ~ 2024.08.03</span>
