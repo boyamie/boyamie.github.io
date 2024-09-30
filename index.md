@@ -7,9 +7,9 @@ author_profile: true
 [![Github Badge](https://img.shields.io/badge/image_classification_task-white?style=flat)](https://github.com/boyamie/)
 # **Projects**
 <br>
-### **Sketch image classification**
-<span style="color:grey">2024.09.11 11:00 ~ 2024.09.26 19:00</span>
-[![Report Badge](https://img.shields.io/badge/REPORT-161c22?style=flat&logo=gitbook&link=https://github.com/boyamie/)](./reports/project1.tex)
+### **Sketch image classification**   
+<span style="color:grey">2024.09.11 11:00 ~ 2024.09.26 19:00</span>  
+[![Report Badge](https://img.shields.io/badge/wrapup-white?style=flat)](./reports/project1.tex)
 
 <br>
 
