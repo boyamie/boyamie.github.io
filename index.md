@@ -9,7 +9,7 @@ author_profile: true
 <br>
 ### **Sketch image classification**
 <span style="color:grey">2024.09.11 11:00 ~ 2024.09.26 19:00</span>
-[![Report Badge](https://img.shields.io/badge/REPORT-161c22?style=flat&logo=gitbook&link=https://github.com/boyamie/)](./reports/tex)
+[![Report Badge](https://img.shields.io/badge/REPORT-161c22?style=flat&logo=gitbook&link=https://github.com/boyamie/)](./reports/project1.tex)
 
 <br>
 
