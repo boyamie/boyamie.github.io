@@ -11,7 +11,7 @@ author_profile: true
 ### **Sketch image classification**   
 <span style="color:grey">2024.09.11 11:00 ~ 2024.09.26 19:00</span>  
 
-[Click to view full report](https://boyamie.github.io/reports/CV기초대회_CV_팀 리포트(21조).pdf)
+![Click to view full report](https://boyamie.github.io/reports/CV기초대회_CV_팀 리포트(21조).pdf)
 
 <br>
 
