@@ -13,8 +13,7 @@ author_profile: true
 
 <a href="https://boyamie.github.io/reports/CV기초대회_CV_팀 리포트(21조).pdf">
   <img src="https://img.shields.io/badge/Final_WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="classification report">
-</a> 
-<a href="https://github.com/boostcampaitech7/level1-imageclassification-cv-21" style="margin-left: 10px;">
+</a><a href="https://github.com/boostcampaitech7/level1-imageclassification-cv-21" style="margin-left: 10px;">
   <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
 </a>
 
