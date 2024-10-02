@@ -12,7 +12,7 @@ author_profile: true
 <span style="color:grey">2024.09.11 11:00 ~ 2024.09.26 19:00</span>  
 
 <a href="https://boyamie.github.io/reports/CV기초대회_CV_팀 리포트(21조).pdf">
-  <img src="https://img.shields.io/badge/📄_Final_Report_Ready-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="classification report">
+  <img src="https://img.shields.io/badge/Final_Report_Ready-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="classification report">
 </a>
 
 <br>
