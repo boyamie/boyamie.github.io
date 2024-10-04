@@ -17,6 +17,10 @@ author_profile: true
 <a href="https://github.com/boostcampaitech7/level1-imageclassification-cv-21" style="margin-left: 10px;">
   <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
 </a>
+<br>
+
+### **Recycling Object Detection**   
+<span style="color:grey">2024.10.02 11:00 ~ 2024.10.24 19:00</span>  
 
 <br>
 
