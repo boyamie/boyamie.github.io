@@ -112,19 +112,19 @@ author_profile: true
 <br><br>
 
 * [Week 10] *Comprehension Competitive Data Science*
-    * [![Daily Report](https://img.shields.io/badge/Day41-red?style=flat)](https://boyamie.github.io/boostcamp-036)
-    [![Daily Report](https://img.shields.io/badge/Day42-orange?style=flat)](https://boyamie.github.io/boostcamp-037)
-    [![Daily Report](https://img.shields.io/badge/Day43-yellow?style=flat)](https://boyamie.github.io/boostcamp-038)
-    [![Daily Report](https://img.shields.io/badge/Day44-green?style=flat)](https://boyamie.github.io/boostcamp-039)
-    [![Daily Report](https://img.shields.io/badge/Day45-blue?style=flat)](https://boyamie.github.io/boostcamp-040)
+    * [![Daily Report](https://img.shields.io/badge/Day41-red?style=flat)](https://boyamie.github.io/boostcamp-041)
+    [![Daily Report](https://img.shields.io/badge/Day42-orange?style=flat)](https://boyamie.github.io/boostcamp-042)
+    [![Daily Report](https://img.shields.io/badge/Day43-yellow?style=flat)](https://boyamie.github.io/boostcamp-043)
+    [![Daily Report](https://img.shields.io/badge/Day44-green?style=flat)](https://boyamie.github.io/boostcamp-044)
+    [![Daily Report](https://img.shields.io/badge/Day45-blue?style=flat)](https://boyamie.github.io/boostcamp-045)
 <br><br>
 
 * [Week 11] *Data-Centric CV*
-    * [![Daily Report](https://img.shields.io/badge/Day46-red?style=flat)](https://boyamie.github.io/boostcamp-036)
-    [![Daily Report](https://img.shields.io/badge/Day47-orange?style=flat)](https://boyamie.github.io/boostcamp-037)
-    [![Daily Report](https://img.shields.io/badge/Day48-yellow?style=flat)](https://boyamie.github.io/boostcamp-038)
-    [![Daily Report](https://img.shields.io/badge/Day49-green?style=flat)](https://boyamie.github.io/boostcamp-039)
-    [![Daily Report](https://img.shields.io/badge/Day50-blue?style=flat)](https://boyamie.github.io/boostcamp-040)
+    *[![Daily Report](https://img.shields.io/badge/Day46-red?style=flat)](https://boyamie.github.io/boostcamp-046)
+    [![Daily Report](https://img.shields.io/badge/Day47-orange?style=flat)](https://boyamie.github.io/boostcamp-047)
+    [![Daily Report](https://img.shields.io/badge/Day48-yellow?style=flat)](https://boyamie.github.io/boostcamp-048)
+    [![Daily Report](https://img.shields.io/badge/Day49-green?style=flat)](https://boyamie.github.io/boostcamp-049)
+    [![Daily Report](https://img.shields.io/badge/Day50-blue?style=flat)](https://boyamie.github.io/boostcamp-050)
 <br><br>
 
 * [Week 12] *Data-Centric CV*
