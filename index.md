@@ -120,7 +120,7 @@ author_profile: true
 <br><br>
 
 * [Week 11] *Data-Centric CV*
-    *[![Daily Report](https://img.shields.io/badge/Day46-red?style=flat)](https://boyamie.github.io/boostcamp-046)
+    * [![Daily Report](https://img.shields.io/badge/Day46-red?style=flat)](https://boyamie.github.io/boostcamp-046)
     [![Daily Report](https://img.shields.io/badge/Day47-orange?style=flat)](https://boyamie.github.io/boostcamp-047)
     [![Daily Report](https://img.shields.io/badge/Day48-yellow?style=flat)](https://boyamie.github.io/boostcamp-048)
     [![Daily Report](https://img.shields.io/badge/Day49-green?style=flat)](https://boyamie.github.io/boostcamp-049)
