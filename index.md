@@ -111,7 +111,7 @@ author_profile: true
     [![Daily Report](https://img.shields.io/badge/Day40-blue?style=flat)](https://boyamie.github.io/boostcamp-040)
 <br><br>
 
-* [Week 10] *Comprehension Competitive Data Science*
+* [Week 10] *Comprehension Competitive Data Science*  
     * [![Daily Report](https://img.shields.io/badge/Day41-red?style=flat)](https://boyamie.github.io/boostcamp-041)
     [![Daily Report](https://img.shields.io/badge/Day42-orange?style=flat)](https://boyamie.github.io/boostcamp-042)
     [![Daily Report](https://img.shields.io/badge/Day43-yellow?style=flat)](https://boyamie.github.io/boostcamp-043)
