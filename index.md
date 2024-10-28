@@ -21,7 +21,15 @@ author_profile: true
 
 ### **Recycling Object Detection**   
 <span style="color:grey">2024.10.02 11:00 ~ 2024.10.24 19:00</span>  
-
+<a href="https://boyamie.github.io/reports/Object Det_CV_팀 리포트(21조).pdf">
+  <img src="https://img.shields.io/badge/Final_WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="ObjectDetection report">
+</a>
+<a href="https://github.com/boostcampaitech7/level2-objectdetection-cv-21" style="margin-left: 10px;">
+  <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
+</a>
+<a href="https://boyamie.github.io/reports/ODcv21.pdf">
+  <img src="https://img.shields.io/badge/Final_WrapUp_PPT-white?style=for-the-badge&logo=microsoftpowerpoint&logoColor=red" alt="ObjectDetection PPT">
+</a>
 <br>
 
 ### **AI Tech 7 OnBoarding Class**
