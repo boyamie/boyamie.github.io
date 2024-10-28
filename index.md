@@ -21,7 +21,12 @@ author_profile: true
 
 ### **Recycling Object Detection**   
 <span style="color:grey">2024.10.02 11:00 ~ 2024.10.24 19:00</span>  
-
+<a href="">
+  <img src="https://img.shields.io/badge/Final_WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="ObjectDetection report">
+</a>
+<a href="https://github.com/boostcampaitech7/level1-imageclassification-cv-21" style="margin-left: 10px;">
+  <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
+</a>
 <br>
 
 ### **AI Tech 7 OnBoarding Class**
