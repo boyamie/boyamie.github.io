@@ -34,6 +34,7 @@ author_profile: true
 
 ### **Recycling Object Detection**  
 <span style="color:grey">2024.10.30 10:00 ~ 2024.11.07 19:00</span> 
+
 <a href="https://boyamie.github.io/reports/datacentric.pdf">
   <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Data-Centric report">
 </a>
