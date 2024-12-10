@@ -8,19 +8,30 @@ author_profile: true
 # **Projects**
 <br>
 
-### **Sketch image classification**   
-<span style="color:grey">2024.09.11 11:00 ~ 2024.09.26 19:00</span>  
+### **Hand Bone Image Segmentation**  
+<span style="color:grey">2024.11.13 10:00 - 2024.11.28 19:00</span> 
 
-<a href="https://boyamie.github.io/reports/CV기초대회_CV_팀 리포트(21조).pdf">
-  <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Classification report">
+<a href="https://boyamie.github.io/reports/ss.pdf">
+  <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Semantic Segmantation report">
 </a>
-<a href="https://github.com/boostcampaitech7/level1-imageclassification-cv-21" style="margin-left: 10px;">
+<a href="https://github.com/boostcampaitech7/level2-cv-semanticsegmentation-cv-13-lv3" style="margin-left: 10px;">
+  <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
+</a>
+<br>
+
+### **Recycling Object Detection**  
+<span style="color:grey">2024.10.30 10:00 - 2024.11.07 19:00</span> 
+
+<a href="https://boyamie.github.io/reports/datacentric.pdf">
+  <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Data-Centric report">
+</a>
+<a href="https://github.com/boostcampaitech7/level2-cv-datacentric-cv-21" style="margin-left: 10px;">
   <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
 </a>
 <br>
 
 ### **Recycling Object Detection**   
-<span style="color:grey">2024.10.02 11:00 ~ 2024.10.24 19:00</span>  
+<span style="color:grey">2024.10.02 11:00 - 2024.10.24 19:00</span>  
 <a href="https://boyamie.github.io/reports/Object Det_CV_팀 리포트(21조).pdf">
   <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="ObjectDetection report">
 </a>
@@ -31,15 +42,16 @@ author_profile: true
   <img src="https://github.com/user-attachments/assets/38f317b9-9dec-4e19-bace-67bd617dd269" alt="PPT" style="height: 20px; vertical-align: middle;"/>
   PPT
 </a>
+
 <br>
 
-### **Recycling Object Detection**  
-<span style="color:grey">2024.10.30 10:00 ~ 2024.11.07 19:00</span> 
+### **Sketch image classification**   
+<span style="color:grey">2024.09.11 11:00 - 2024.09.26 19:00</span>  
 
-<a href="https://boyamie.github.io/reports/datacentric.pdf">
-  <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Data-Centric report">
+<a href="https://boyamie.github.io/reports/CV기초대회_CV_팀 리포트(21조).pdf">
+  <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Classification report">
 </a>
-<a href="https://github.com/boostcampaitech7/level2-cv-datacentric-cv-21" style="margin-left: 10px;">
+<a href="https://github.com/boostcampaitech7/level1-imageclassification-cv-21" style="margin-left: 10px;">
   <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
 </a>
 <br>
