@@ -11,7 +11,7 @@ author_profile: true
 ### **Hand Bone Image Segmentation**  
 <span style="color:grey">2024.11.13 10:00 - 2024.11.28 19:00</span> 
 
-<a href="https://boyamie.github.io/reports/ss.pdf">
+<a href="https://boyamie.github.io/reports/Semantic_Segmentation_WrapUP_Report.pdf">
   <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Semantic Segmantation report">
 </a>
 <a href="https://github.com/boostcampaitech7/level2-cv-semanticsegmentation-cv-13-lv3" style="margin-left: 10px;">
@@ -42,7 +42,6 @@ author_profile: true
   <img src="https://github.com/user-attachments/assets/38f317b9-9dec-4e19-bace-67bd617dd269" alt="PPT" style="height: 20px; vertical-align: middle;"/>
   PPT
 </a>
-
 <br>
 
 ### **Sketch image classification**   
