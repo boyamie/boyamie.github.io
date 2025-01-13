@@ -19,7 +19,7 @@ author_profile: true
 </a>
 <br>
 
-### **Recycling Object Detection**  
+### **Data-Centric CV**  
 <span style="color:grey">2024.10.30 10:00 - 2024.11.07 19:00</span> 
 
 <a href="https://boyamie.github.io/reports/datacentric.pdf">
