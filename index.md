@@ -9,6 +9,17 @@ author_profile: true
 <br>
 
 ### **Hand Bone Image Segmentation**  
+<span style="color:grey">2024.12.10 10:00 - 2025.02.12 19:00</span> 
+
+<a href="https://boyamie.github.io/reports/Nota.pdf">
+  <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Nota report">
+</a>
+<a href="https://github.com/boostcampaitech7/level2-cv-semanticsegmentation-cv-13-lv3" style="margin-left: 10px;">
+  <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
+</a>
+<br>
+
+### **Hand Bone Image Segmentation**  
 <span style="color:grey">2024.11.13 10:00 - 2024.11.28 19:00</span> 
 
 <a href="https://boyamie.github.io/reports/Semantic_Segmentation_WrapUP_Report.pdf">
