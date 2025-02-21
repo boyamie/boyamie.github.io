@@ -8,7 +8,7 @@ author_profile: true
 # **Projects**
 <br>
 
-### **Hand Bone Image Segmentation**  
+### **Exploring Lightweight Modeling Recipes for Audio Language Models (ASR & AAC)**  
 <span style="color:grey">2024.12.10 10:00 - 2025.02.12 19:00</span> 
 
 <a href="https://boyamie.github.io/reports/Nota.pdf">
