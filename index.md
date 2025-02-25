@@ -17,7 +17,7 @@ author_profile: true
 <a href="https://github.com/boostcampaitech7/level2-cv-semanticsegmentation-cv-13-lv3" style="margin-left: 10px;">
   <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
 </a>
-<a href="https://boyamie.github.io/reports/nota.pdf">
+<a href="https://boyamie.github.io/reports/nota.pptx">
   <img src="https://github.com/user-attachments/assets/38f317b9-9dec-4e19-bace-67bd617dd269" alt="PPT" style="height: 20px; vertical-align: middle;"/>
 </a>
 <br>
