@@ -8,13 +8,13 @@ author_profile: true
 # **Projects**
 <br>
 
-### **Exploring Lightweight Modeling Recipes for Audio Language Models (ASR & AAC)**  
+### **Lightweight Modeling for Audio Language Models (ASR & AAC)**  
 <span style="color:grey">2024.12.10 10:00 - 2025.02.12 19:00</span> 
 
 <a href="https://boyamie.github.io/reports/Nota.pdf">
   <img src="https://img.shields.io/badge/WrapUp_Report-white?style=for-the-badge&logo=adobeacrobatreader&logoColor=red" alt="Nota report">
 </a>
-<a href="https://github.com/boostcampaitech7/level2-cv-semanticsegmentation-cv-13-lv3" style="margin-left: 10px;">
+<a href=".https://github.com/boostcampaitech7/level4-cv-finalproject-hackathon-cv-13-lv3" style="margin-left: 10px;">
   <img src="https://img.shields.io/badge/Project_Github-black?style=for-the-badge&logo=github" alt="project github">
 </a>
 <a href="https://boyamie.github.io/reports/nota.pptx">
